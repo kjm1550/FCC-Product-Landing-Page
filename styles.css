@@ -5,16 +5,51 @@
 
 #header {
 	background-color: rgb(210, 20, 20);
-	padding: 15px;
+	padding: 10px 20px 0px 20px;
 }
 #header h1 {
 	display: inline-block;
+	font-size: 3em;
 }
-
 #nav-bar {
 	float: right;
+}
+#nav-bar li {
+	
+	width: 120px;
+	padding: auto;
+	list-style-type: none;
+}
+.nav-link {
+	text-decoration: none;
+	list-style: none;
+	color: black;
+	display: block;
+	padding: 6px 10px;
+	border: 2px solid #222222;
+}
+.no-bottom {
+	border-bottom: none;
+}
+.nav-link:hover {
+	background-color: darkred;
 }
 
 #front-page img {
 	width: 100%;
+	border-top: 2px solid #222222;
+	border-bottom: 2px solid #222222;
 }
+#front-page ul {
+	display: flex;
+	background-color:  rgb(210, 20, 20);
+	justify-content: space-around;
+	width: 100%;
+}
+#front-page ul {
+	list-style-type: none;
+	font-size: 2em;
+	padding: 36px 0;
+}
+
+
