@@ -1,11 +1,16 @@
 * {
 	margin: 0;
 	padding: 0;
+	border: 0;
 }
 
 #header {
 	background-color: rgb(210, 20, 20);
 	padding: 10px 20px 0px 20px;
+	border-bottom: 3px solid #222222;
+	position: fixed;
+	top: 0px;
+	width: 100%;
 }
 #header h1 {
 	display: inline-block;
@@ -13,6 +18,8 @@
 }
 #nav-bar {
 	float: right;
+	margin-right: 40px;
+	background-color: #eeeeee;
 }
 #nav-bar li {
 	
@@ -37,8 +44,9 @@
 
 #front-page img {
 	width: 100%;
-	border-top: 2px solid #222222;
 	border-bottom: 2px solid #222222;
+	margin-top: 120px;
+	display: flex;
 }
 #front-page ul {
 	display: flex;
@@ -46,10 +54,79 @@
 	justify-content: space-around;
 	width: 100%;
 }
-#front-page ul {
+#front-page li {
 	list-style-type: none;
 	font-size: 2em;
 	padding: 36px 0;
 }
 
 
+#tickets {
+	display: flex;
+	justify-content: space-around;
+	margin: 185px 0;
+}
+.tic-item {
+	list-style-type: none;
+	width: 20%;
+	border: 3px solid #222222;
+	text-align: center;
+}
+.tic-item h3 {
+	background-color: rgb(210, 20, 20);
+	border-bottom: 3px solid #222222;
+	padding: 28px;
+	font-size: 2.3em
+}
+.tic-item p {
+	padding: 26px;
+	font-size: 1.3em;
+}
+.button {
+	font-size: 1.3em;
+	padding: 8px 14px;
+	margin-bottom: 20px;
+}
+
+
+#stadium {
+	background-color: rgb(210, 20, 20);
+	border-top: 2px solid #222222;
+	border-bottom: 2px solid #222222;
+	width: 100%;
+}
+#stadium p, #stadium a {
+	font-size: 26px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	margin-top: 44px;
+}
+#stadium #video {
+	width: 50%;
+	margin: 36px 25%;
+}
+
+
+#email-club {
+	margin-top: 62px;
+}
+
+
+
+footer {
+	background-color: #777777;
+	height: 75px;
+	display: flex;
+}
+footer p{
+	text-align: right;
+	font-size: 1.1em;
+	padding: 28px 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+	#stadium #video {
+		height: 400px;
+	}
+}
