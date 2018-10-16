@@ -64,7 +64,7 @@
 #tickets {
 	display: flex;
 	justify-content: space-around;
-	margin: 185px 0;
+	padding: 185px 0;
 }
 .tic-item {
 	list-style-type: none;
